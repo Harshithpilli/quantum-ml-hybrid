@@ -26,7 +26,7 @@ Quantum-malware-simple-arch/
 
 │── evaluate.py            # Unified evaluation & stress-tests
 
-│── dataset_generator.py   # Synthetic dataset creation
+│── make_dataset.py   # Synthetic dataset creation
 
 │── requirements.txt       # Python dependencies
 
