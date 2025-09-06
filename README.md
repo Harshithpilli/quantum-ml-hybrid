@@ -19,11 +19,17 @@ Modular GitHub structure for easy extension.
 
 Quantum-malware-simple-arch/
 │── data/                  # Generated datasets (CSV)
+
 │── classical_model.py     # Classical ML training/evaluation
+
 │── quantum_model.py       # Quantum ML training/evaluation
+
 │── evaluate.py            # Unified evaluation & stress-tests
+
 │── dataset_generator.py   # Synthetic dataset creation
+
 │── requirements.txt       # Python dependencies
+
 │── README.md              # Project documentation
 
 # Example Results
