@@ -43,11 +43,15 @@ Python 3.9+
 
 scikit-learn
 
-pandas, numpy
+pandas
 
 qiskit
 
-matplotlib (optional, for plotting)
+pennylane
+
+torch
+
+joblib
 
 # Installation
 
