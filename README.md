@@ -67,5 +67,28 @@ pip install -r requirements.txt
 # Generate dataset
 python make_dataset.py
 
-# Run evaluation
-python evaluate.py 
+# Classical Model 
+# For Clean
+python src/train.py --data data/sample_clean.csv --model classical --out models/classical.pkl
+python src/evaluate.py --data data/sample_clean.csv --model models/classical_clean.pkl --type classical
+
+# For Adversarial
+python src/train.py --data data/sample_adversarial.csv --model classical --out models/classical_adv.pkl
+python src/evaluate.py --data data/sample_adversarial.csv --model models/classical_adv.pkl --type classical
+
+# For Noisy
+python src/train.py --data data/sample_noisy.csv --model classical --out models/classical_noisy.pkl
+python src/evaluate.py --data data/sample_noisy.csv --model models/classical_noisy.pkl --type classical
+
+# Quantum Model
+# For Clean
+python src/train.py --data data/sample_clean.csv --model quantum --out models/quantum_clean.pt --epochs 50
+python src/evaluate.py --data data/sample_clean.csv --model models/quantum_clean.pt --type quantum
+
+# For Noisy
+python src/train.py --data data/sample_noisy.csv --model quantum --out models/quantum_noisy.pt --epochs 50
+python src/evaluate.py --data data/sample_noisy.csv --model models/quantum_noisy.pt --type quantum
+
+# For Adversarial
+python src/train.py --data data/sample_adversarial.csv --model quantum --out models/quantum_adversarial.pt --epochs 50
+python src/evaluate.py --data data/sample_adversarial.csv --model models/quantum_adversarial.pt --type quantum 
