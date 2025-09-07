@@ -40,17 +40,11 @@ Quantum-malware-simple-arch/
 # Requirements
 
 Python 3.9+
-
 scikit-learn
-
 pandas
-
 qiskit
-
 pennylane
-
 torch
-
 joblib
 
 # Installation
